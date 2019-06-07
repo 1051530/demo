@@ -1,0 +1,60 @@
+.logo{
+    text-decoration:none;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+a{
+    position:relative;
+    text-decoration:none;
+}
+
+a:visited {
+    color: blue;
+}
+ul, li{
+    position:relative;
+}
+
+#subheader{
+    background-color: #CCEEFF;
+    height: 50px;
+    line-height:50px;
+}
+
+.cart{
+    font-weight: bold;
+    font-size: 26px;
+    text-align:right;
+}
+
+#content{
+    position:relative;
+    background-color: bisque;
+    height: 100%;
+    width: 100%;
+    top:-18px;
+}
+
+#sidebar{
+    position:relative;
+    background-color: coral;
+    width: 100%;
+}
+
+.selected{
+    font-size: 22px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.product-list{
+
+}
+
+.item{
+    position:relative;
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+}
