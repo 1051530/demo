@@ -12,7 +12,13 @@
     </div>
     <div id="subheader">
         <div class="cart">
-            Your cart is empty.
+            {% if request.user.is_authenticated %}
+                {{request.user}} 您已經登入囉~
+                <a href="/accounts/logout/">登出</a>
+            {% else %}
+                <a href="/accounts/login/">登入</a>
+                <a href="/accounts/register/">註冊</a>
+            {% endif %}
         </div>
     </div>
     <div id="content">

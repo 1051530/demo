@@ -17,11 +17,15 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+from user.views import *
 
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('shop.urls', namespace='shop')),
+    url(r'^accounts/login/$', login),
+    url(r'^accounts/logout/$', logout),
+    url(r'^accounts/register/$', register),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
