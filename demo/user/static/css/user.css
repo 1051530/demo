@@ -40,7 +40,7 @@ ul, li{
     position: absolute;
     text-align: center;
     top:15%;
-    left: 35%;
+    left: 20%;
 }
 .register-form{
     background-color: lightblue;
@@ -49,6 +49,10 @@ ul, li{
     position: absolute;
     top:15%;
     left: 20%;
+}
+
+. form-group  {
+  margin-bottom :  5px;
 }
 
 #username{

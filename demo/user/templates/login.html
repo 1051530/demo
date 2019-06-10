@@ -13,12 +13,12 @@
     <div class="form-body">
         <div class="login-form">
             <form action="" method="post">
+                {% if message %}
+                    <div class="alert alert-warning">{{ message }}</div>
+                {% endif %}
                 {% csrf_token %}
-                <label for="username">用戶名稱:</label>
-                <input type="text" name="username" value="" id="username"> <br />
-                <label for="password">用戶密碼:</label>
-                <input type="password" name="password" value="" id="password"> <br />
-                <input type="submit" style="font-size: 26px;" value="登入" />
+                {{ login_form }}
+            <input type="submit" style="font-size: 26px;" value="登入">
             </form>
         </div>
     </div>
