@@ -13,12 +13,12 @@ body{
 a{
     position:relative;
     text-decoration:none;
-    color: blue;
 }
 
 a:visited {
     color: blue;
 }
+
 ul, li{
     position:relative;
 }
@@ -28,14 +28,22 @@ ul, li{
     line-height:50px;
     background-color: lightblue;
     border-top-style:solid;
-
+    border-bottom-style: solid;
 }
 
 .cart{
     font-weight: bold;
-    font-size: 26px;
-    text-align:right;
-    margin-right: 50px;
+    font-size: 22px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.cart_detail{
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    border: 5px black solid;
 }
 
 #content{
@@ -47,8 +55,10 @@ ul, li{
     background-color: lightsalmon;
     width: 100%;
     border-bottom-style:solid;
-    border-top-style: solid;
     margin-bottom: 50px;
+    margin-top: -20px;
+    height: 50px;
+    line-height: 50px;
 }
 
 .selected{
@@ -69,4 +79,57 @@ ul, li{
     float:left;
     margin-left: 150px;
     margin-bottom: 100px;
+}
+
+label[for="id_quantity"]{
+    margin-right: 10px;
+}
+
+tr{
+}
+
+td{
+    width: 150px;
+}
+
+table{
+    border: 4px;
+}
+
+.total{
+    height: 150px;
+    font-size: 30px;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.button {
+    text-align: center;
+    display: block;
+    width: 200px;
+    height: 30px;
+    background: lightblue;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    float: left;
+    border-radius: 12px;
+    left:67%;
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+.button:visited{
+    color: white;
+}
+
+.light{
+    background-color: #ffd2d2	;
+    color: black;
+}
+
+.light:visited{
+    color: black;
 }
