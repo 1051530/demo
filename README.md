@@ -8,4 +8,4 @@
 3. save state: 
 	put a little file in the user's computer->cookie;
 	create a space to memory->session 
-4.我可愛
+4. 我可愛
