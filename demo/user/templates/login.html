@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{% static "css/user.css" %}" rel="stylesheet">
+    <title>login</title>
+</head>
+<body>
+    <div id="header">
+        <a href="/" class="logo">線上生鮮超市 Online Market</a>
+    </div>
+    <div class="form-body">
+        <div class="login-form">
+            <form action="" method="post">
+                {% if message %}
+                    <div class="alert alert-warning">{{ message }}</div>
+                {% endif %}
+                {% csrf_token %}
+                {{ login_form.as_p }}
+            <input type="submit" style="font-size: 26px;" value="登入">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
