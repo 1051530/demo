@@ -1,0 +1,68 @@
+body{
+    background-color: cornsilk;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.logo{
+    text-decoration:none;
+    font-weight: bold;
+    font-size: 26px;
+    padding-left: 10px;
+}
+
+a{
+    position:relative;
+    text-decoration:none;
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+ul, li{
+    position:relative;
+}
+
+.form-body{
+    background-color: lightblue;
+    border-top-style:solid;
+    position: absolute;
+    top: 34px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.login-form{
+    background-color: lightblue;
+    font-size: 40px;
+    line-height:80px;
+    position: absolute;
+    text-align: center;
+    top:15%;
+    left: 20%;
+}
+.register-form{
+    background-color: lightblue;
+    font-size: 34px;
+    line-height:60px;
+    position: absolute;
+    top:15%;
+    left: 20%;
+}
+
+. form-group  {
+  margin-bottom :  5px;
+}
+
+#username{
+    height: 40px;
+    width: 300px;
+    font-size: 30px;
+}
+
+#password{
+    height: 40px;
+    width: 300px;
+    font-size: 30px;
+}

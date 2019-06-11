@@ -52,6 +52,6 @@
     </table>
     <br>
     <a href="{% url "shop:product_list" %}" class="button light">繼續購物</a>
-    <a href="#" class="button">結帳</a>
+    <a href="{% url "orders:order_create" %}" class="button">結帳</a>
     <br><br><br>
 {% endblock %}
