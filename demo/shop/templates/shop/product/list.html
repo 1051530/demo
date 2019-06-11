@@ -1,0 +1,33 @@
+{% extends "shop/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    {% if category %}{{ category.name }}{% else %}Products{% endif %}
+{% endblock %}
+
+{% block content %}
+    <div id="sidebar">
+        <ul>
+            <li class="selected">
+                <a href="{% url "shop:product_list" %}" style="color: red;margin-left: 10px;">全部</a>
+                {% for c in categories %}
+                    <a href="{{ c.get_absolute_url }}" style="margin-left: 10px;"> {{ c.name }}</a>
+                {% endfor %}
+            </li>
+        </ul>
+    </div>
+    <div id="main" class="product-list">
+        {% for product in products %}
+            <div class="item">
+                <a href="{{ product.get_absolute_url }}"> {{ product.name }}</a>
+                <br>
+                <a href="{{ product.get_absolute_url }}">
+                    <img src="{% if product.image %}{{ product.image.url }}{% else %}
+                                {% static "images/no_image.png" %}{% endif %}" style="width: 200px;height: 200px;">
+                </a>
+                <br>
+                ${{ product.price }}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

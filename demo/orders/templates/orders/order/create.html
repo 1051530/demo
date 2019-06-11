@@ -1,0 +1,28 @@
+{% extends "shop/base.html" %}
+
+{% block title %}
+結帳
+{% endblock %}
+
+{% block content %}
+    <h1 style="margin-left: 50px">結帳</h1>
+
+    <div>
+        <h3 style="margin-left: 50px">您的訂單</h3>
+        <ul>
+            {% for item in cart %}
+            <li>
+                {{ item.quantity }}x {{ item.product.name }}
+                <span>${{ item.total_price }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+        <p>總價: ${{ cart.get_total_price }}</p>
+    </div>
+
+    <form action="." method="post" class="order-form">
+        {{ form.as_p }}
+        <p><input type="submit" value="確認訂單"></p>
+        {% csrf_token %}
+    </form>
+{% endblock %}
