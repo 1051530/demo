@@ -9,5 +9,4 @@
 	put a little file in the user's computer->cookie;
 	create a space to memory->session 
 4. 我可愛
-5. 註冊那些我不能用，會空白
-
+5. 我決定放生celery
