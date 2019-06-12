@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^user/login/', login),
     url(r'^user/logout/', logout),
     url(r'^user/register/', register),
+    url(r'^user/reset_pw/', reset_pw),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

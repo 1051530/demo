@@ -13,3 +13,8 @@ class RegisterForm(forms.Form):
     email = forms.EmailField(label="電子郵件信箱", widget=forms.EmailInput(attrs={'class': 'form-control'}))
     common_store = forms.CharField(label="常用取貨門市", max_length=128, widget=forms.TextInput(attrs={'class': 'form-control'}))
 
+class ResetForm(forms.Form):
+    password1 = forms.CharField(label="原始密碼", max_length=256, widget=forms.PasswordInput)
+    password2 = forms.CharField(label="新密碼", max_length=256, widget=forms.PasswordInput)
+    password3 = forms.CharField(label="確認密碼", max_length=256, widget=forms.PasswordInput)
+

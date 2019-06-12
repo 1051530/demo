@@ -1,68 +1,59 @@
 body{
-    background-color: cornsilk;
+    background-color: #FBFFB9;
     margin: 0 auto;
-    padding: 0 auto;
+    font-family:Microsoft JhengHei;
 }
+
 .logo{
     text-decoration:none;
     font-weight: bold;
-    font-size: 26px;
-    padding-left: 10px;
+    font-size: 28px;
+    margin-left: 3px;
+    width: 100%;
+    text-align: center;
+}
+
+ul, li{
+    position:relative;
 }
 
 a{
     position:relative;
     text-decoration:none;
-    color: blue;
+    color: #754F44;
 }
 
-a:visited {
-    color: blue;
-}
-ul, li{
-    position:relative;
+#header{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    margin-left: 3%;
 }
 
-.form-body{
-    background-color: lightblue;
-    border-top-style:solid;
-    position: absolute;
-    top: 34px;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.form-body
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 5%;
+
+}
+#home{
+    position: fixed;
+    top: 70%;
+    right:10%;
 }
 
 .login-form{
-    background-color: lightblue;
-    font-size: 40px;
-    line-height:80px;
-    position: absolute;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    top:15%;
-    left: 20%;
+    font-size: 26px;
 }
 .register-form{
-    background-color: lightblue;
-    font-size: 34px;
-    line-height:60px;
-    position: absolute;
-    top:15%;
-    left: 20%;
-}
-
-. form-group  {
-  margin-bottom :  5px;
-}
-
-#username{
-    height: 40px;
-    width: 300px;
-    font-size: 30px;
-}
-
-#password{
-    height: 40px;
-    width: 300px;
-    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
 }

@@ -1,41 +1,46 @@
 body{
-    background-color: cornsilk;
+    background-color: #FBFFB9;
     margin: 0 auto;
+    font-family:Microsoft JhengHei;
 }
 
 .logo{
     text-decoration:none;
     font-weight: bold;
-    font-size: 26px;
-    padding-left: 10px;
+    font-size: 28px;
+    margin-left: 3px;
+    width: 100%;
+    text-align: center;
 }
 
 a{
     position:relative;
     text-decoration:none;
+    color: #754F44;
 }
 
-a:visited {
-    color: blue;
+.item a:hover{
+    text-decoration:underline;
 }
 
 ul, li{
     position:relative;
 }
 
-#subheader{
+.subheader{
     height: 50px;
     line-height:50px;
-    background-color: lightblue;
+    background-color: #FDD692;
     border-top-style:solid;
     border-bottom-style: solid;
 }
 
 .cart{
     font-weight: bold;
-    font-size: 22px;
+    font-size: 26px;
     text-align: right;
-    margin-right: 5px;
+    margin-right: 15px;
+    margin-top:4px;
 }
 
 .cart_detail{
@@ -52,13 +57,13 @@ ul, li{
 }
 
 #sidebar{
-    background-color: lightsalmon;
+    background-color: #FDD692;
     width: 100%;
     border-bottom-style:solid;
     margin-bottom: 50px;
-    margin-top: -20px;
-    height: 50px;
-    line-height: 50px;
+    line-height: 40px;
+    height: 40px;
+    margin-top: -10px;
 }
 
 .selected{
@@ -118,6 +123,21 @@ table{
     font-size: 22px;
 }
 
+.button_back{
+    text-align: center;
+    display: block;
+    width: 200px;
+    height: 30px;
+    background: lightblue;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    float: left;
+    border-radius: 12px;
+    left: 5%;
+    font-size: 22px;
+}
+
 .button:visited{
     color: white;
 }
@@ -134,12 +154,26 @@ table{
 .check{
     width: 350px;
     position: relative;
-    border: 5px black solid;
-    float: right;
+    border: 5px black dashed;
+    float: left; 
     margin-right: 150px;
-    margin-left: 45%;
+    margin-left: 15%;
+    font-size: 20px;
+    background-color: #FDD692;
 }
 
 .order-form{
-    float: right;
+    float: left;
+    margin-left: 15%;
+    padding-right: 40px;
+    padding-left: 30px;
+    font-size: 26px;
 }
+
+#header{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    margin-left: 3%;
+}
+

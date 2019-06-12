@@ -52,6 +52,10 @@
     </table>
     <br>
     <a href="{% url "shop:product_list" %}" class="button light">繼續購物</a>
-    <a href="{% url "orders:order_create" %}" class="button">結帳</a>
+    {% if request.session.is_login %}
+        <a href="{% url "orders:order_create" %}" class="button">結帳</a>
+    {% else %}
+        <a href="/user/login" class="button">請登入後才可結帳!</a>
+    {% endif %}
     <br><br><br>
 {% endblock %}
